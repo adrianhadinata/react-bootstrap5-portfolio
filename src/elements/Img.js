@@ -14,7 +14,7 @@ export default function Img(props) {
 
 Img.propTypes = {
   className: propTypes.string,
-  imgSrc: propTypes.string,
+  imageSrc: propTypes.string,
   imageAlt: propTypes.string,
   imageWidth: propTypes.string,
 };

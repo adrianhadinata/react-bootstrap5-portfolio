@@ -1,13 +1,16 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
+import Img from "../elements/Img";
+
+import MyLogo from "../assets/img/my_logo.png";
 
 export default function Header() {
   return (
     <nav className="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
       <div className="container">
         <Link className="navbar-brand text-black" to="/">
-          Adrian Hadinata
+          <Img imageAlt={"Adrian's Logo"} imageSrc={MyLogo} imageWidth={"200px"}></Img>
         </Link>
         <button className="navbar-toggler" type="button">
           <span className="navbar-toggler-icon"></span>
