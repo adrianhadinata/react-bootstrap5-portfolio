@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import Homepage from "./views/Homepage";
 import "./assets/css/custom.css";
 function App() {

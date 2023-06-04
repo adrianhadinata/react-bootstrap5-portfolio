@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Img from "../elements/Img";
 
+import "../assets/css/Header.scss";
 import MyLogo from "../assets/img/my_logo.png";
 
 export default function Header() {
@@ -10,7 +11,11 @@ export default function Header() {
     <nav className="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
       <div className="container">
         <Link className="navbar-brand text-black" to="/">
-          <Img imageAlt={"Adrian's Logo"} imageSrc={MyLogo} imageWidth={"200px"}></Img>
+          <Img
+            imageAlt={"Adrian's Logo"}
+            imageSrc={MyLogo}
+            imageWidth={"200px"}
+          ></Img>
         </Link>
         <button className="navbar-toggler" type="button">
           <span className="navbar-toggler-icon"></span>
@@ -24,30 +29,6 @@ export default function Header() {
                 to="#home"
               >
                 Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link linked about active text-black"
-                to="#about"
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link linked projects text-black"
-                to="#projects"
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link linked projects text-black"
-                to="#projects"
-              >
-                Contact Me
               </Link>
             </li>
           </ul>

@@ -4,10 +4,16 @@ import Img from "../elements/Img";
 import { Fade, Zoom, Roll } from "react-reveal";
 
 import Iam from "../assets/img/adrian-kkn-crop.jpg";
+import "../assets/css/Jumbotron.scss";
 
 export default function Jumbotron() {
   return (
     <div className="jumbotron text-center" id="jumbotron">
+      <span className="tags top-tags html-tag">&lt;html&gt;</span>
+      <span className="tags top-tags php-tag">
+        &lt;?php if($fail) ?? repeat() : learnMore() ?&gt;
+      </span>
+      <span className="tags top-tags body-tag">&lt;body&gt;</span>
       <Roll top delay={750} duration={1000}>
         <Img
           className={"rounded-circle img-thumbnail mt-5"}
@@ -19,20 +25,11 @@ export default function Jumbotron() {
       <Zoom cascade left delay={1000} duration={2500}>
         <h1 className="display-4">Adrian Hadinata Hadi Darsono</h1>
       </Zoom>
-      {/* <Fade bottom delay={1000}> */}
       <p className="lead" id="title">
         <Zoom left cascade delay={1500} duration={2000}>
           Fullstack Web Developer
         </Zoom>
-        <Fade bottom delay={1250}>
-          {" "}
-          &nbsp;|&nbsp;{" "}
-        </Fade>
-        <Zoom right cascade delay={1500} duration={2000}>
-          PT. Globalindo Intimates
-        </Zoom>
       </p>
-      {/* </Fade> */}
       <Svg
         fillColor={"#ffffff"}
         fillOpacity={"1"}

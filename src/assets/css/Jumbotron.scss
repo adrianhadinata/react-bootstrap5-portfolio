@@ -1,0 +1,47 @@
+.jumbotron {
+  width: 100%;
+  h1 {
+    span {
+      display: block;
+      text-decoration: none;
+      position: relative;
+      transition: transform 0.2s ease;
+      &:hover {
+        color: #ffd700 !important;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+.tags {
+  position: absolute;
+  left: 10%;
+  opacity: 0.5;
+  font-family: "la belle aurore";
+  white-space: pre-line;
+  display: none;
+}
+
+.body-tag {
+  // margin-top: 200px;
+  bottom: auto;
+  top: 20%;
+  left: 15%;
+}
+
+.php-tag {
+  top: 30%;
+  left: 65%;
+}
+
+.display-4 {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 4px;
+  margin-top: 1rem;
+}
+
+.lead {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 4px;
+}
